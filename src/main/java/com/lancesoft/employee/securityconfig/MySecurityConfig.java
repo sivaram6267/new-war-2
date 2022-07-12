@@ -62,8 +62,6 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .csrf()
                 .disable()
-                .cors()
-                .disable()
                 .authorizeRequests()
                 .antMatchers("/api/v1/auth/login","/swagger-ui.html").permitAll()
                 	.antMatchers("/api/v1/admin/f").permitAll()
